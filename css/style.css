@@ -1987,6 +1987,9 @@
 /*Variables*/
 /*Mixin*/
 /*Mixin*/
+/*Media query*/
+/*pantalla retina*/
+/*Media query*/
 /*Variables*/
 * {
   margin: 0;
@@ -2063,6 +2066,11 @@ body {
   color: white;
   font-weight: bold;
   letter-spacing: 2px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.login__form--btn:hover {
+  background-color: #3b6978;
 }
 
 .olvido-contraseña {
@@ -2103,7 +2111,6 @@ body {
   color: white;
   display: inline-block;
   text-align: center;
-  background-color: #3b6978;
 }
 .footer__derechos spam {
   font-weight: bold;
@@ -2127,6 +2134,86 @@ body {
   width: 300px;
   text-align: center;
   transform: translateY(-22px);
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    width: initial;
+  }
+
+  .header {
+    align-self: center;
+  }
+
+  .login__form--input {
+    width: 100%;
+  }
+  .login__form--btn {
+    width: 100%;
+  }
+
+  .olvido-contraseña {
+    font-size: 13px;
+  }
+
+  .parrafo__login__article {
+    width: 480px;
+    text-align: justify;
+    margin-left: 20px;
+  }
+
+  .footer {
+    margin: 0;
+  }
+  .footer__apoya--img1 {
+    width: 80px;
+  }
+  .footer__apoya--img1--largo {
+    width: 150px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .content {
+    flex-flow: column;
+  }
+
+  .login {
+    width: 100%;
+  }
+  .login__form--btn {
+    width: 20em;
+  }
+
+  .parrafo__login {
+    margin-top: 70px;
+  }
+  .parrafo__login__article {
+    width: initial;
+  }
+  .parrafo__login__article--title {
+    text-align: center;
+  }
+
+  .footer__apoya--img1 {
+    width: 50px;
+  }
+  .footer__apoya--img1--largo {
+    transform: translateY(-12px);
+  }
+}
+@media only screen and (max-width: 500px) {
+  .footer {
+    width: 350px;
+    display: flex;
+    flex-flow: column;
+    align-self: center;
+  }
+  .footer__apoya {
+    display: inline;
+  }
+  .footer__apoya--titulo {
+    margin-bottom: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
