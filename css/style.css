@@ -2001,7 +2001,7 @@ body {
   font-family: "Roboto", sans-serif;
   background: linear-gradient(#204051, #3b6978);
   display: flex;
-  height: 100vh;
+  height: 100%;
   flex-flow: column;
 }
 
@@ -2069,7 +2069,7 @@ body {
 .olvido-contraseña {
   padding: 5px;
   font-family: "Lato", sans-serif;
-  transform: translateY(40PX);
+  transform: translateY(40px);
 }
 .olvido-contraseña a {
   text-decoration: none;
@@ -2109,9 +2109,13 @@ body {
 }
 
 .content__izquierdo {
+  align-items: start;
+  display: grid;
+  grid-template-rows: 320px 1fr;
   grid-area: content__izquierdo;
   border-right: 1px solid #3b6978;
   height: 430px;
+  grid-template-areas: "categorias__academicas" "user";
 }
 
 .content__derecha {
@@ -2119,34 +2123,42 @@ body {
 }
 
 .categorias__academicas {
+  grid-area: categorias__academicas;
   color: white;
   text-align: center;
   margin-top: 30px;
 }
-.categorias__academicas li {
-  margin-bottom: 15px;
-  border-bottom: 1px solid #3b6978;
-  padding: 10px;
+.categorias__academicas--details {
   cursor: pointer;
+  border-bottom: 1px solid #3b6978;
 }
-.categorias__academicas li:last-child {
+.categorias__academicas--details:last-child {
   border: none;
 }
-.categorias__academicas li:hover {
+.categorias__academicas--titulo {
+  list-style: none;
+  padding: 15px;
+}
+.categorias__academicas--titulo:hover {
   background-color: #3b6978;
   border-radius: 5px;
 }
-.categorias__academicas a {
-  color: white;
-  text-decoration: none;
-}
-.categorias__academicas--menu {
+.categorias__academicas--item {
+  padding: 10px;
+  margin-left: 30px;
   list-style: none;
-  width: 80%;
-  margin: 0 auto;
+}
+.categorias__academicas--item a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+.categorias__academicas--item a:hover {
+  text-decoration: underline;
 }
 
 .user {
+  grid-area: user;
   display: flex;
   justify-content: center;
   color: white;
@@ -2191,6 +2203,79 @@ body {
 }
 
 /*index*/
+.agregar__usuario--formulario {
+  display: grid;
+  grid-template-areas: "agregar__usuario--form1 agregar__usuario--form2" "agregar__usuario--btn-save agregar__usuario--btn-save";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 10px;
+  height: 340px;
+}
+.agregar__usuario--form1 {
+  grid-area: agregar__usuario--form1;
+  display: flex;
+  flex-flow: column;
+  width: calc(100% / 2);
+  text-align: center;
+  width: calc(100% / 2);
+  justify-content: space-around;
+  position: relative;
+  left: 25%;
+}
+.agregar__usuario--form2 {
+  grid-area: agregar__usuario--form2;
+  display: flex;
+  flex-flow: column;
+  width: calc(100% / 2);
+  text-align: center;
+  width: calc(100% / 2);
+  justify-content: space-around;
+  position: relative;
+  left: 25%;
+}
+.agregar__usuario--label {
+  color: white;
+}
+.agregar__usuario--label:after {
+  content: " :";
+}
+.agregar__usuario--input {
+  padding: 0.5em 0px 0px 0.2em;
+  outline: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-align: center;
+}
+.agregar__usuario--input:invalid {
+  background-color: #dd2c00;
+  border: 1px solid #dd2c00;
+}
+.agregar__usuario--btn-save {
+  grid-area: agregar__usuario--btn-save;
+  background-color: #58B43C;
+  border: 1px solid #58B43C;
+  transition: 0.5s;
+  align-content: center;
+  transform: translatex(18em);
+  border-radius: 8px;
+  width: calc(100% / 2);
+  margin-top: 15px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.agregar__usuario--btn-save:hover {
+  background-color: transparent;
+}
+
+::placeholder {
+  color: black;
+  font-size: 1.1em;
+}
+
+/*agregar usuario*/
 .footer {
   margin-top: auto;
   color: white;
