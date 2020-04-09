@@ -1,77 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assest/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assest/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assest/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="./assest/favicon_io/site.webmanifest">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assest/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assest/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assest/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assest/favicon_io/site.webmanifest" />
     <title>Login</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <picture class="header__picture">
-            <img src="./assest/logoHydra.png" width="200" alt="" class="footer__img--logo">    
-        </picture>
+      <picture class="header__picture">
+        <img
+          src="./assest/logoHydra.png"
+          width="200"
+          alt=""
+          class="footer__img--logo"
+        />
+      </picture>
     </header>
     <section class="content__login">
-       <section class="login">
-           <form class="login__form" action="index.html" method="post">
-                <label class="login__form--label" for="cedula">N° Identificacion</label>
-                <span class="login__form--icon icon-profile"><input type="text" name="cedula" class="login__form--input" placeholder="Identificacion"></span>
-                    
-                
-                <label for="password" class="login__form--label">Password</label>
-                <span class="icon-keyboard login__form--icon "><input class="login__form--input" type="password" name="password" placeholder="password"></span>
-                
-               
-               <button class="login__form--btn" type="submit" value="login">Inicio sesión</button>
-           </form>
-           <section class="olvido-contraseña">
-               <h4 class="olvido-contraseña__recupera">
-                   <a href="/" class="olvido-contraseña__link">¿Olvido su contraseña?</a>
-               </h4>
-           </section>
-       </section> 
-       <section class="parrafo__login">
-           <article class="parrafo__login__article">
-               <h1 class="parrafo__login__article--title">
-                   Con la potencia de un gran esfuerzo
-               </h1>
-               <p class="parrafo__login__article--parrafo">
-                   La <spam class="sesion__investigacion">sesion de investigacion de la escuela militar de aviacion,</spam> da soporte a este proyecto, el cual ha sido adaptada a la necesidad de la escuela, como plataforma estudiantil.
-               </p>
-               <p class="parrafo__login__article--parrafo">
-                   Bienvenidos a la plataforma estudiantil virtual de proyectos para la formacion de la fuerza aerea, todas las asignaturas de los cursos vistos se veran reflejadas aca.
-                   Si eres estudiantes vas a tenes accesor a las ayudas <spam class="parafo__login__article--guias">(Guias)</spam> dadas por los docentes para ayudar al proyecto de Grado
-                   Los docentes de las asignarutas tienen acceso a los proyectos de los estudianrtes de su asignatura, podran subir informacion, ayudas, fechas para sus avances   
-               </p>
-           </article>
-       </section>
+      <section class="login">
+        <form class="login__form" action="index.html" method="post">
+          <label class="login__form--label" for="cedula"
+            >N° Identificacion</label
+          >
+          <span class="login__form--icon icon-profile"
+            ><input
+              type="text"
+              name="cedula"
+              class="login__form--input"
+              placeholder="Identificacion"
+          /></span>
+
+          <label for="password" class="login__form--label">Password</label>
+          <span class="icon-keyboard login__form--icon"
+            ><input
+              class="login__form--input"
+              type="password"
+              name="password"
+              placeholder="password"
+          /></span>
+
+          <button class="login__form--btn" type="submit" value="login">
+            Inicio sesión
+          </button>
+        </form>
+        <section class="olvido-contraseña">
+          <h4 class="olvido-contraseña__recupera">
+            <a href="/" class="olvido-contraseña__link"
+              >¿Olvido su contraseña?</a
+            >
+          </h4>
+        </section>
+      </section>
+      <section class="parrafo__login">
+        <article class="parrafo__login__article">
+          <h1 class="parrafo__login__article--title">
+            Con la potencia de un gran esfuerzo
+          </h1>
+          <p class="parrafo__login__article--parrafo">
+            La
+            <spam class="sesion__investigacion"
+              >sesion de investigacion de la escuela militar de aviacion,</spam
+            >
+            da soporte a este proyecto, el cual ha sido adaptada a la necesidad
+            de la escuela, como plataforma estudiantil.
+          </p>
+          <p class="parrafo__login__article--parrafo">
+            Bienvenidos a la plataforma estudiantil virtual de proyectos para la
+            formacion de la fuerza aerea, todas las asignaturas de los cursos
+            vistos se veran reflejadas aca. Si eres estudiantes vas a tenes
+            accesor a las ayudas
+            <spam class="parafo__login__article--guias">(Guias)</spam> dadas por
+            los docentes para ayudar al proyecto de Grado Los docentes de las
+            asignarutas tienen acceso a los proyectos de los estudianrtes de su
+            asignatura, podran subir informacion, ayudas, fechas para sus
+            avances
+          </p>
+        </article>
+      </section>
     </section>
     <footer class="footer">
-        <section class="footer__derechos">
-            <p class="footer__derechos--parrafo">
-                Todos los derechos son reservados <spam class="sesion__investigacion">Sesion de investigacion de la escuela militar de aviacion</spam>
-            </p>
-            <p class="footer__derechos--parrafo">
-                Instituto de educacion superir suajeta a inspeccion y vigilancia por el ministerio de educacion nacionnal
-            </p>
-        </section>
-        <section class="footer__apoya">
-            <h3 class="footer__apoya--titulo">Apoya:</h3>
-            <picture class="footer__apoya--logotipos">
-                <img src="./assest/FAC-1.png" alt="" class="footer__apoya--img1">
-                <img src="./assest/GIEA-png.png" alt="" class="footer__apoya--img1">
-                <img src="./assest/LOGO GENESIS-PNG.png" alt="" class="footer__apoya--img1">
-                <img src="./assest/LOGO GICMA-PNG.png" alt="" class="footer__apoya--img1">
-                <img src="./assest/EMAVI-PNG.png" alt="" class="footer__apoya--img1">
-                <img src="./assest/GILOGA.png" alt="" class="footer__apoya--img1--largo">
-            </picture>
-        </section>
+      <section class="footer__derechos">
+        <p class="footer__derechos--parrafo">
+          Todos los derechos son reservados
+          <spam class="sesion__investigacion"
+            >Sesion de investigacion de la escuela militar de aviacion</spam
+          >
+        </p>
+        <p class="footer__derechos--parrafo">
+          Instituto de educacion superir suajeta a inspeccion y vigilancia por
+          el ministerio de educacion nacionnal
+        </p>
+      </section>
+      <section class="footer__apoya">
+        <h3 class="footer__apoya--titulo">Apoya:</h3>
+        <picture class="footer__apoya--logotipos">
+          <img src="./assest/FAC-1.png" alt="" class="footer__apoya--img1" />
+          <img src="./assest/GIEA-png.png" alt="" class="footer__apoya--img1" />
+          <img
+            src="./assest/LOGO GENESIS-PNG.png"
+            alt=""
+            class="footer__apoya--img1"
+          />
+          <img
+            src="./assest/LOGO GICMA-PNG.png"
+            alt=""
+            class="footer__apoya--img1"
+          />
+          <img
+            src="./assest/EMAVI-PNG.png"
+            alt=""
+            class="footer__apoya--img1"
+          />
+          <img
+            src="./assest/GILOGA.png"
+            alt=""
+            class="footer__apoya--img1--largo"
+          />
+        </picture>
+      </section>
     </footer>
-</body>
+  </body>
 </html>
