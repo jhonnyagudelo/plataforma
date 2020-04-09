@@ -2062,16 +2062,19 @@
   display: grid;
   grid-template-columns: 300px 59em;
   grid-gap: 10px;
-  height: 100%;
+  height: 100vh;
   grid-template-areas: "content__izquierdo content__derecha";
 }
-
+.content__index h1, .content__index h3 {
+  color: white;
+  text-align: center;
+}
 /*Index*/
 .agregar__usuario--formulario {
   display: grid;
-  grid-template-areas: "agregar__usuario--form1 agregar__usuario--form2" "agregar__usuario--btn-save agregar__usuario--btn-save";
+  grid-template-areas: "agregar__usuario--form1 agregar__usuario--form2" "agregar__usuario--form3 agregar__usuario--form3" "agregar__usuario--btn-save agregar__usuario--btn-save";
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 10px;
   height: 340px;
 }
@@ -2096,6 +2099,20 @@
   justify-content: space-around;
   position: relative;
   left: 25%;
+}
+.agregar__usuario--form3 {
+  grid-area: agregar__usuario--form3;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column;
+}
+.agregar__usuario--roles {
+  text-align: center;
+  padding: 18px;
+}
+.agregar__usuario--roles label {
+  display: block;
+  margin: 10px;
 }
 .agregar__usuario--label {
   color: white;
@@ -2353,7 +2370,7 @@ body {
   }
 
   .agregar__usuario--formulario {
-    grid-template-areas: "agregar__usuario--form1" "agregar__usuario--form2" "agregar__usuario--btn-save";
+    grid-template-areas: "agregar__usuario--form1" "agregar__usuario--form2" "agregar__usuario--form3" "agregar__usuario--btn-save";
   }
   .agregar__usuario--formulario label {
     margin: 8px 0px;
@@ -2375,6 +2392,10 @@ body {
 @media only screen and (max-width: 765px) {
   .content__index {
     grid-template-columns: 300px 27.4em;
+  }
+
+  .agregar__usuario--formulario {
+    grid-template-columns: 1fr;
   }
 }
 @media only screen and (max-width: 650px) {

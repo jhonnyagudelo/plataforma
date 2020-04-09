@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <link
-    href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap"
-    rel="stylesheet"
-  />
+      href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -56,6 +56,17 @@
           </details>
           <details class="categorias__academicas--details">
             <summary class="categorias__academicas--titulo">Cursos</summary>
+            <ul class="categoria__academicas--items">
+              <li class="categorias__academicas--item">
+                <a href="" class="categorias__academicas--item-a">Agregar</a>
+              </li>
+              <li class="categorias__academicas--item">
+                <a href="" class="categorias__academicas--item-a">Mostrar</a>
+              </li>
+            </ul>
+          </details>
+          <details class="categorias__academicas--details">
+            <summary class="categorias__academicas--titulo">Materias</summary>
             <ul class="categoria__academicas--items">
               <li class="categorias__academicas--item">
                 <a href="" class="categorias__academicas--item-a">Agregar</a>
@@ -116,6 +127,7 @@
         </section>
       </div>
       <div class="content__derecha">
+        <h1>Datos persoanles</h1>
         <section class="agregar__usuario">
           <form
             class="agregar__usuario--formulario"
@@ -227,6 +239,23 @@
 
               <label for="img" class="agregar__usuario--label">Imagen</label>
               <input type="file" name="img" class="agregar__usuario--input" />
+            </div>
+            <div class="agregar__usuario--form3">
+              <h3>Roles y perfiles</h3>
+              <div class="agregar__usuario--roles">
+                <label for="documento" class="agregar__usuario--label"
+                  >Tipo rol</label
+                >
+                <select class="" name="documento" required>
+                  <option value="">Seleccione:</option>
+                </select>
+                <label for="documento" class="agregar__usuario--label"
+                  >Tipo perfil</label
+                >
+                <select class="" name="documento" required>
+                  <option value="">Seleccione:</option>
+                </select>
+              </div>
             </div>
             <button
               class="agregar__usuario--btn-save"
