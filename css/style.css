@@ -2089,6 +2089,13 @@
   position: relative;
   left: 25%;
 }
+.agregar__usuario--form1 select {
+  padding: 0.5em 0px 0px 0.2em;
+  outline: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-align: center;
+}
 .agregar__usuario--form2 {
   grid-area: agregar__usuario--form2;
   display: flex;
@@ -2113,6 +2120,14 @@
 .agregar__usuario--roles label {
   display: block;
   margin: 10px;
+}
+.agregar__usuario--roles select {
+  padding: 0.5em 0px 0px 0.2em;
+  outline: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-align: center;
+  width: 20em;
 }
 .agregar__usuario--label {
   color: white;
@@ -2365,8 +2380,12 @@ body {
   }
 
   .content__index {
-    height: 800px;
+    height: 100vh;
     grid-template-columns: 300px 29.5em;
+  }
+
+  .content__izquierdo {
+    height: 100vh;
   }
 
   .agregar__usuario--formulario {
@@ -2376,7 +2395,7 @@ body {
     margin: 8px 0px;
   }
   .agregar__usuario--btn-save {
-    transform: translatex(9em);
+    transform: translatex(8.5em);
   }
 
   .footer {
@@ -2394,8 +2413,16 @@ body {
     grid-template-columns: 300px 27.4em;
   }
 
+  .content__izquierdo {
+    height: 450px;
+  }
+
   .agregar__usuario--formulario {
     grid-template-columns: 1fr;
+  }
+
+  .footer {
+    margin-top: 230px;
   }
 }
 @media only screen and (max-width: 650px) {
@@ -2451,6 +2478,12 @@ body {
     height: 100vh;
   }
 
+  .agregar__usuario--form1 {
+    left: 20%;
+  }
+  .agregar__usuario--form2 {
+    left: 20%;
+  }
   .agregar__usuario--btn-save {
     transform: translatex(8em);
   }
