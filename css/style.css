@@ -2088,6 +2088,7 @@
   justify-content: space-around;
   position: relative;
   left: 25%;
+  outline: none;
 }
 .agregar__usuario--form1 select {
   padding: 0.5em 0px 0px 0.2em;
@@ -2106,6 +2107,7 @@
   justify-content: space-around;
   position: relative;
   left: 25%;
+  outline: none;
 }
 .agregar__usuario--form3 {
   grid-area: agregar__usuario--form3;
@@ -2160,11 +2162,46 @@
   font-weight: bold;
   letter-spacing: 2px;
   cursor: pointer;
+  transition: 0.5s;
+}
+.agregar__usuario--btn-save:hover {
+  background-color: transparent;
 }
 .agregar__usuario--btn-save:hover {
   background-color: transparent;
 }
 
+.tabla__contenido {
+  text-align: center;
+  color: white;
+  overflow: auto;
+}
+.tabla__contenido--parrafo {
+  padding: 15px;
+  font-family: "Lato", system-ui;
+}
+
+.tabla__contenido--principal, .tabla__contenido--principal td, .tabla__contenido--principal th {
+  width: 100%;
+}
+.tabla__contenido--principal th {
+  background-color: #3b6978;
+  padding: 5px 20px;
+  width: 8em;
+}
+.tabla__contenido--principal td {
+  width: 7.3em;
+  padding: 0.1em;
+}
+.tabla__contenido--principal tr:nth-child(even) {
+  background-color: #84a9ac;
+}
+
+.tabla__contenido--principal, .tabla__contenido--principal td, .tabla__contenido--principal th {
+  border: 1px solid #3b6978;
+  border-collapse: collapse;
+  /*quitar la doble linea*/
+}
 * {
   margin: 0;
   padding: 0;
@@ -2320,6 +2357,63 @@ body {
 }
 
 /*index*/
+/*Cursos*/
+.agregar__curso--form1, .agregar__perfil--form1, .agregar__rol--form1, .agregar__asignacion--form1 {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.agregar__curso--label, .agregar__perfil--label, .agregar__rol--label, .agregar__asignacion--label {
+  color: white;
+  text-align: center;
+  margin: 20px 0px 10px 0px;
+}
+.agregar__curso input, .agregar__perfil input, .agregar__rol input, .agregar__asignacion input {
+  width: 29em;
+  padding: 0.5em 0px 0px 0.2em;
+  outline: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-align: center;
+}
+.agregar__curso textarea, .agregar__perfil textarea, .agregar__rol textarea, .agregar__asignacion textarea {
+  border-radius: 5px;
+  border: 1px solid white;
+}
+.agregar__curso--btn-save, .agregar__perfil--btn-save, .agregar__rol--btn-save, .agregar__asignacion--btn-save {
+  border-radius: 8px;
+  width: calc(100% / 2);
+  margin-top: 15px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.5s;
+  background-color: #58B43C;
+  border: 2px solid #58B43C;
+  position: relative;
+  transform: translatex(18em);
+}
+.agregar__curso--btn-save:hover, .agregar__perfil--btn-save:hover, .agregar__rol--btn-save:hover, .agregar__asignacion--btn-save:hover {
+  background-color: transparent;
+}
+
+/*Cursos*/
+/*asignacion*/
+/*asignacion*/
+/*rol*/
+.agregar__rol input[type=file] {
+  color: white;
+  font-size: 16px;
+}
+/*rol*/
+/*perfil*/
+.agregar__perfil input[type=file] {
+  color: white;
+  font-size: 16px;
+}
+/*perfil*/
 /*Footer*/
 .footer {
   margin-top: auto;
@@ -2421,6 +2515,10 @@ body {
     grid-template-columns: 1fr;
   }
 
+  .agregar__curso--btn-save, .agregar__asignacion--btn-save, .agregar__rol--btn-save, .agregar__perfil--btn-save {
+    transform: translatex(9em);
+  }
+
   .footer {
     margin-top: 230px;
   }
@@ -2450,6 +2548,10 @@ body {
   .content__index {
     grid-template-columns: 100%;
     grid-template-areas: "content__izquierdo" "content__derecha";
+  }
+
+  .agregar__curso--btn-save, .agregar__asignacion--btn-save, .agregar__rol--btn-save, .agregar__perfil--btn-save {
+    transform: translatex(12em);
   }
 
   .footer__apoya--img1 {
@@ -2488,6 +2590,16 @@ body {
     transform: translatex(8em);
   }
 
+  .agregar__curso input, .agregar__asignacion input, .agregar__rol input, .agregar__perfil input {
+    width: 90%;
+  }
+  .agregar__curso textarea, .agregar__asignacion textarea, .agregar__rol textarea, .agregar__perfil textarea {
+    width: 90%;
+  }
+  .agregar__curso--btn-save, .agregar__asignacion--btn-save, .agregar__rol--btn-save, .agregar__perfil--btn-save {
+    transform: translatex(6em);
+  }
+
   .footer {
     width: 350px;
     display: flex;
@@ -2502,36 +2614,5 @@ body {
   }
 }
 /*Media query*/
-.tabla__contenido {
-  text-align: center;
-  color: white;
-  overflow: auto;
-}
-.tabla__contenido--parrafo {
-  padding: 15px;
-  font-family: "Lato", system-ui;
-}
-
-.tabla__contenido--principal, .tabla__contenido--principal td, .tabla__contenido--principal th {
-  width: 100%;
-}
-.tabla__contenido--principal th {
-  background-color: #3b6978;
-  padding: 5px 20px;
-  width: 8em;
-}
-.tabla__contenido--principal td {
-  width: 7.3em;
-  padding: 0.1em;
-}
-.tabla__contenido--principal tr:nth-child(even) {
-  background-color: #84a9ac;
-}
-
-.tabla__contenido--principal, .tabla__contenido--principal td, .tabla__contenido--principal th {
-  border: 1px solid #3b6978;
-  border-collapse: collapse;
-  /*quitar la doble linea*/
-}
 
 /*# sourceMappingURL=style.css.map */
