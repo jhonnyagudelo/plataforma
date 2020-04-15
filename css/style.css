@@ -2315,6 +2315,7 @@ body {
   grid-area: user;
   display: flex;
   justify-content: center;
+  align-self: center;
   color: white;
 }
 .user__picture {
@@ -2502,7 +2503,7 @@ body {
     width: 150px;
   }
 }
-@media only screen and (max-width: 765px) {
+@media only screen and (max-width: 768px) {
   .content__index {
     grid-template-columns: 300px 27.4em;
   }
